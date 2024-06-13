@@ -1,6 +1,10 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 
+defineProps({
+  msg: String
+})
+
 const count = ref(0)
 
 </script>
@@ -8,6 +12,8 @@ const count = ref(0)
 <template>
     <div>
         <p>Current component: A</p>
+        <h3 class="mt-1 text-2xl text-indigo-500">{{ msg }}</h3>
+
         <div class="py-5">
             <div>
                 <span>count: {{ count }}</span>

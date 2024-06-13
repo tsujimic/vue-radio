@@ -20,7 +20,7 @@ const current = shallowRef(CompA)
                 <label><input type="radio" v-model="current" :value="CompB" /> B</label>
             </div>
             <KeepAlive>
-                <component :is="current"></component>
+                <component :is="current" :msg="new Date().toLocaleString('ja-JP')"></component>
             </KeepAlive>
         </div>
     </main>    
