@@ -19,7 +19,7 @@ const msg = ref('')
                     placeholder="type input ... "
                 />
             </div>
-    </div>
+        </div>
     </div>
 </template>
     
